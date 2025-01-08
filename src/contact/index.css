@@ -1,0 +1,114 @@
+.butt {
+    background-color: #007BFF; 
+    color: #fff; 
+    border: none; 
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Add spacing inside the button */
+    font-size: 16px; /* Font size for text */
+    font-family: Arial, sans-serif; /* Clean and modern font */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover effect */
+  .butt:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  }
+  
+  /* Focus effect for accessibility */
+  .butt:focus {
+    outline: 2px solid #80bdff; /* Light blue outline */
+    outline-offset: 2px; /* Space between button and outline */
+  }
+  
+  /* Disabled button style */
+  .butt:disabled {
+    background-color: #ccc; /* Gray background for disabled state */
+    cursor: not-allowed; /* Show not-allowed cursor */
+    color: #666; /* Dimmed text color */
+    box-shadow: none; /* Remove shadow */
+  }
+  img{
+    margin-left: 100px;
+    height: 169px;
+    width: 169px;
+  }
+  form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  }
+  
+  form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  .clockContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(to bottom, #00ffff, #000); /* Gradient background */
+    font-family: "Arial", sans-serif;
+}
+
+.clock {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 2rem; /* Large text for better readability */
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    animation: glow 1.5s infinite alternate; /* Subtle glowing animation */
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #00ffff;
+    }
+    to {
+        box-shadow: 0 0 20px #00ffff;
+    }
+}
